@@ -13,6 +13,7 @@
       "@/styles/*": ["styles/*"]
     },
     "strict": true,
+    "noImplicitAny": false,
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "esModuleInterop": true,
