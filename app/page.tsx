@@ -1,5 +1,5 @@
 import Card from "@/components/home/card";
-import Prompt from "@/components/home/prompt";
+import Prompt from "@/components/home/prompt.client";
 import { DEPLOY_URL } from "@/lib/constants";
 import { Github, Twitter } from "@/components/shared/icons";
 import WebVitals from "@/components/home/web-vitals";
