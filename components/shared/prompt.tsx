@@ -1,12 +1,11 @@
-"use client";
-
 import { useState } from "react";
 
 export default function Prompt() {
   const [inputPrompt, setInputPrompt] = useState("");
+  const [message, setMessage] = useState(""); // State for feedback to the user
 
   const handleSubmit = async () => {
-    const endpoint = "https://vercel-bd87a8e14a83.herokuapp.com/send_prompt"; // Replace '/send_prompt' with the specific endpoint on your backend if it's different
+    const endpoint = "https://vercel-bd87a8e14a83.herokuapp.com/send_prompt"; // Ensure this URL points to your backend
 
     try {
       const response = await fetch(endpoint, {
@@ -18,9 +17,16 @@ export default function Prompt() {
       });
 
       const data = await response.json();
-      console.log(data);
+
+      if (response.ok) {
+        setMessage("Prompt sent successfully!"); // Set success message
+        setInputPrompt(""); // Clear the input field
+      } else {
+        setMessage(`Error: ${data.message || "Failed to send prompt"}`); // Set error message from server response or a default message
+      }
     } catch (error) {
       console.error("Error sending data:", error);
+      setMessage("Failed to send prompt due to a network error."); // Set a generic error message
     }
   };
 
@@ -33,6 +39,7 @@ export default function Prompt() {
         placeholder="Enter your prompt..."
       />
       <button onClick={handleSubmit}>Submit</button>
+      {message && <p>{message}</p>} {/* Display feedback message */}
     </div>
   );
 }
