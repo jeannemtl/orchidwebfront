@@ -26,7 +26,7 @@ export default function Prompt() {
       const data = await response.json();
 
       if (response.ok) {
-        setMessage("Check what she says on TG!"); // Set success message
+        // setMessage("Prompt sent successfully!"); // Set success message
         setInputPrompt(""); // Clear the input field
         setIsLoading(false); 
       } else {
