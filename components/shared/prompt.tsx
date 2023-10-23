@@ -26,7 +26,7 @@ export default function Prompt() {
       const data = await response.json();
 
       if (response.ok) {
-        // setMessage("Prompt sent successfully!"); // Set success message
+        setMessage("Prompt sent successfully!"); // Set success message
         setInputPrompt(""); // Clear the input field
         setIsLoading(false); 
       } else {
@@ -84,7 +84,20 @@ export default function Prompt() {
 </button>
 
   
-      {message && <p>{message}</p>} {/* Display feedback message */}
+{message && (
+  <p style={{
+    backgroundColor: '#f2f2f2',
+    padding: '10px 20px',
+    borderRadius: '5px',
+    textAlign: 'center',
+    marginTop: '10px',
+    borderTop: '2px solid #ccc'  // This adds a line above the message
+  }}>
+    {message}
+  </p>
+)}
+
+
     </div>
   );
   
