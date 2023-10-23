@@ -37,7 +37,7 @@ export default function Prompt() {
         type="text"
         value={inputPrompt}
         onChange={(e) => setInputPrompt(e.target.value)}
-        placeholder="Enter your prompt..."
+        placeholder="Enter your prompterminal..."
       />
       <button onClick={handleSubmit}>Submit</button>
       {message && <p>{message}</p>} {/* Display feedback message */}
