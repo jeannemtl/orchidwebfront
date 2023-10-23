@@ -40,7 +40,7 @@ export default function Prompt() {
         type="text"
         value={inputPrompt}
         onChange={(e) => setInputPrompt(e.target.value)}
-        placeholder="Enter your prompt for chatgpt..."
+        placeholder="Go ahead, chat with her..."
         style={{
           width: "100%",
           borderRadius: "15px",
