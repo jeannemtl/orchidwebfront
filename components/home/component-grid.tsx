@@ -52,7 +52,7 @@ export default function ComponentGrid() {
           <p className="text-gray-600">Tooltip</p>
         </div>
       </Tooltip>
-      <Prompt />
+    
     </div>
   );
 }
