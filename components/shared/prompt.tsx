@@ -5,7 +5,8 @@ export default function Prompt() {
   const [message, setMessage] = useState(""); // State for feedback to the user
 
   const handleSubmit = async () => {
-    const endpoint = "https://vercel-bd87a8e14a83.herokuapp.com/send_prompt"; // Ensure this URL points to your backend
+    const endpoint = "https://precedent-kk1w014xq-jeannemtl.vercel.app/send_prompt";
+; // Ensure this URL points to your backend
 
     try {
       const response = await fetch(endpoint, {
