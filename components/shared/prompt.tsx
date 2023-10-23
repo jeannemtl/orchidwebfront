@@ -32,16 +32,20 @@ export default function Prompt() {
     }
   };
 
-  return (
-    <div>
-      <input
-        type="text"
-        value={inputPrompt}
-        onChange={(e) => setInputPrompt(e.target.value)}
-        placeholder="Enter your prompterminal..."
-      />
-      <button onClick={handleSubmit}>Submit</button>
-      {message && <p>{message}</p>} {/* Display feedback message */}
-    </div>
-  );
+  // ...
+
+return (
+  <div>
+    <input
+      type="text"
+      value={inputPrompt}
+      onChange={(e) => setInputPrompt(e.target.value)}
+      placeholder="Enter your prompt for chatgpt..."
+      style={{ width: "100%" }} // This will make the input field take up the full width of its parent container
+    />
+    <button onClick={handleSubmit}>Submit</button>
+    {message && <p>{message}</p>} {/* Display feedback message */}
+  </div>
+);
+
 }
