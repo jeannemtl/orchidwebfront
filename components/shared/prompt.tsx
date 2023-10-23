@@ -42,19 +42,21 @@ export default function Prompt() {
 
   return (
     <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-      <input
-        type="text"
-        value={inputPrompt}
-        onChange={(e) => setInputPrompt(e.target.value)}
-        placeholder="Go ahead, chat with her..."
-        style={{
-          width: "100%",
-          borderRadius: "15px",
-          padding: "15px 10px",
-          border: "1px solid #ccc",
-          marginBottom: "10px" // Adds space below the input field
-        }}
-      />
+      <textarea
+  value={inputPrompt}
+  onChange={(e) => setInputPrompt(e.target.value)}
+  placeholder="Go ahead, chat with her..."
+  rows={4}  // initial number of rows
+  style={{
+    width: "100%",
+    borderRadius: "15px",
+    padding: "15px 10px",
+    border: "1px solid #ccc",
+    marginBottom: "10px",
+    resize: "vertical"  // allows users to resize the textarea vertically
+  }}
+></textarea>
+
       <button
   onClick={handleSubmit}
   className="group flex max-w-fit items-center justify-center space-x-2 rounded-full border border-black bg-black px-5 py-2 text-sm text-white transition-colors hover:bg-white hover:text-black"
