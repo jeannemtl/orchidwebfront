@@ -25,14 +25,14 @@ const SignInModal = ({
         <div className="flex flex-col items-center justify-center space-y-3 border-b border-gray-200 bg-white px-4 py-6 pt-8 text-center md:px-16">
           <a href="https://t.me/hotmomabaebot">
             <Image
-              src="/logo.png"
+              src="/logo.jpg"
               alt="Logo"
               className="h-10 w-10 rounded-full"
               width={20}
               height={20}
             />
           </a>
-          
+
           <p className="text-sm text-gray-500">
             This is strictly for demo purposes - only your email and profile
             picture will be stored.

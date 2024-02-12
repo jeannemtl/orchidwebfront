@@ -35,15 +35,20 @@ export default async function Home() {
         >
           <Twitter className="h-5 w-5 text-[#1d9bf0]" />
           <p className="text-sm font-semibold text-[#1d9bf0]">
-            Add girlfriend bot on Telegram to hear her reply
+            Add the ORCHID bot on Telegram for audio support
           </p>
         </a>
         <h1
           className="animate-fade-up bg-gradient-to-br from-black to-stone-500 bg-clip-text text-center font-display text-4xl font-bold tracking-[-0.02em] text-transparent opacity-0 drop-shadow-sm [text-wrap:balance] md:text-7xl md:leading-[5rem]"
           style={{ animationDelay: "0.15s", animationFillMode: "forwards" }}
         >
-          ChatGPT with your girlfriend bot here
+          ORCHID
         </h1>
+        <h5 className="mb-4 text-center text-black">
+          {" "}
+          {/* Add a margin bottom for spacing */}
+          ORCHID decides which model works best for you
+        </h5>
         <p
           className="mt-6 animate-fade-up text-center text-gray-500 opacity-0 [text-wrap:balance] md:text-xl"
           style={{ animationDelay: "0.25s", animationFillMode: "forwards" }}

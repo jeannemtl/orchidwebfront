@@ -7,9 +7,8 @@ import Footer from "@/components/layout/footer";
 import { Suspense } from "react";
 
 export const metadata = {
-  title: "Girlfriend bot",
-  description:
-    "Just a girlfriend bot",
+  title: "ORCHID",
+  description: "Hybrid models for any context",
   metadataBase: new URL("https://t.me/hotmomabaebot"),
   themeColor: "#FFF",
 };
